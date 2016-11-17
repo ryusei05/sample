@@ -14,6 +14,7 @@
 		1B0BC4311DDD9DAF0069BB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0BC42F1DDD9DAF0069BB48 /* LaunchScreen.storyboard */; };
 		1B0BC43C1DDD9DAF0069BB48 /* SimplePianoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BC43B1DDD9DAF0069BB48 /* SimplePianoTests.swift */; };
 		1B0BC4471DDD9DAF0069BB48 /* SimplePianoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BC4461DDD9DAF0069BB48 /* SimplePianoUITests.swift */; };
+		1B0BC4551DDDA4930069BB48 /* CLAP!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1B0BC4541DDDA4930069BB48 /* CLAP!.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1B0BC4421DDD9DAF0069BB48 /* SimplePianoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePianoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B0BC4461DDD9DAF0069BB48 /* SimplePianoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePianoUITests.swift; sourceTree = "<group>"; };
 		1B0BC4481DDD9DAF0069BB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B0BC4541DDDA4930069BB48 /* CLAP!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "CLAP!.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		1B0BC41A1DDD9DAF0069BB48 = {
 			isa = PBXGroup;
 			children = (
+				1B0BC4541DDDA4930069BB48 /* CLAP!.mp3 */,
 				1B0BC4251DDD9DAF0069BB48 /* SimplePiano */,
 				1B0BC43A1DDD9DAF0069BB48 /* SimplePianoTests */,
 				1B0BC4451DDD9DAF0069BB48 /* SimplePianoUITests */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0BC4551DDDA4930069BB48 /* CLAP!.mp3 in Resources */,
 				1B0BC4311DDD9DAF0069BB48 /* LaunchScreen.storyboard in Resources */,
 				1B0BC42E1DDD9DAF0069BB48 /* Assets.xcassets in Resources */,
 				1B0BC42C1DDD9DAF0069BB48 /* Main.storyboard in Resources */,

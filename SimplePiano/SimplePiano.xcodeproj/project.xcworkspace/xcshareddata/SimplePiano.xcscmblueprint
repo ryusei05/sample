@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EB5DCD53211BF46CE001464584ECA478BFEBBE0F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "388505A75B963815BD2EA301543F87480E041C1F" : 0,
+    "EB5DCD53211BF46CE001464584ECA478BFEBBE0F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C68F8F39-AD0B-4563-9F54-2BACEAC13359",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "388505A75B963815BD2EA301543F87480E041C1F" : "",
+    "EB5DCD53211BF46CE001464584ECA478BFEBBE0F" : "swift_sample\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SimplePiano",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SimplePiano\/SimplePiano.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ryusei05\/sample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "388505A75B963815BD2EA301543F87480E041C1F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ryusei05\/sample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EB5DCD53211BF46CE001464584ECA478BFEBBE0F"
+    }
+  ]
+}
