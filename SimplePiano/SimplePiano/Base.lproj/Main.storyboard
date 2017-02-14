@@ -17,12 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98O-Zu-tR2">
-                                <rect key="frame" x="137" y="394" width="46" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98O-Zu-tR2">
+                                <rect key="frame" x="51" y="227" width="90" height="113"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="chick.png"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="4VS-Lo-lGB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE7-jl-OcD">
+                                <rect key="frame" x="115" y="421" width="90" height="76"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="mouse.png"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="iG3-oE-YlQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksD-D9-mxW">
+                                <rect key="frame" x="194" y="248" width="90" height="71"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="cow.png"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="J85-ds-Avn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,6 +49,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="441" y="241"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chick.png" width="161" height="212"/>
+        <image name="cow.png" width="258" height="195"/>
+        <image name="mouse.png" width="258" height="196"/>
+    </resources>
 </document>

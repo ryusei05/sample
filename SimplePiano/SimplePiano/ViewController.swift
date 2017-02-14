@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     var player:AVAudioPlayer? = nil
     var soundVolume = 1.0
 
+    let soundManager = SoundManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,6 +28,17 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(sender:UIButton) {
         print("Tapped")
         
+        switch sender.tag {
+        case 1:
+            soundManager.play("/Users/ryusei/Documents/sandbox/swift_sample/SimplePiano/chick.mp3")
+        case 2:
+            soundManager.play("/Users/ryusei/Documents/sandbox/swift_sample/SimplePiano/cow.mp3")
+        case 3:
+            soundManager.play("/Users/ryusei/Documents/sandbox/swift_sample/SimplePiano/mouse.mp3")
+        default:
+            break
+        }
+/*
 //        let soundPath = (NSBundle.mainBundle().bundlePath as NSString).stringByAppendingPathComponent("CLAP!.mp3")
 //        let url:NSURL? = NSURL.fileURLwithPath(soundPath)
         let soundPath = NSURL(fileURLWithPath: "/Users/ryusei/Documents/sandbox/swift_sample/SimplePiano/CLAP!.mp3")
@@ -41,6 +54,7 @@ class ViewController: UIViewController {
         } else {
             print("みつかんねー")
         }
+*/
     }
     
 
