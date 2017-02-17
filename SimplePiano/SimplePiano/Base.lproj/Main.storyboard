@@ -10,8 +10,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimplePiano" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="kZe-Uz-OUV"/>
+                        <viewControllerLayoutGuide type="bottom" id="glD-Ve-edD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -41,6 +41,14 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="J85-ds-Avn"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6p-UD-XCp">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Record" id="Vta-JM-p2W"/>
+                                    <barButtonItem title="Stop" id="4JB-7F-XWi"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

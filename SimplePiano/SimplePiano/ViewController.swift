@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import ReplayKit
 
 class ViewController: UIViewController {
     var player:AVAudioPlayer? = nil
@@ -25,6 +26,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func recordTapped(sender:UIButton) {
+        RPScreenRecorder.sharedRecorder().startRecordingWithMicrophoneEnabled(true, handler: nil)
+    }
+
+    @IBAction func stopTapped(sender:UIButton) {
+//        RPScreenRecorder.sharedRecorder().stopRecordingWithHandler{(preview)}
+    }
+    
     @IBAction func buttonTapped(sender:UIButton) {
         print("Tapped")
         
@@ -38,6 +47,22 @@ class ViewController: UIViewController {
         default:
             break
         }
+
+        UIView.animateWithDuration(0.5,
+                            delay: 0,
+                            options: UIViewAnimationOptions.CurveEaseInOut,
+            animations: {
+                sender.center = CGPointMake(sender.center.x, sender.center.y - 20)
+            }){(_)in
+                UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut,
+                    animations: {
+                        sender.center = CGPointMake(sender.center.x, sender.center.y + 20)
+                        
+                    }){(_)in
+                }
+        
+        }
+        
 /*
 //        let soundPath = (NSBundle.mainBundle().bundlePath as NSString).stringByAppendingPathComponent("CLAP!.mp3")
 //        let url:NSURL? = NSURL.fileURLwithPath(soundPath)
