@@ -217,7 +217,7 @@
 				TargetAttributes = {
 					1B0BC4221DDD9DAF0069BB48 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 9RWA2Z35X5;
+						DevelopmentTeam = MZFQQT56NK;
 					};
 					1B0BC4361DDD9DAF0069BB48 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -432,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimplePiano/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rainbowapps.SimplePiano;
@@ -443,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimplePiano/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rainbowapps.SimplePiano;

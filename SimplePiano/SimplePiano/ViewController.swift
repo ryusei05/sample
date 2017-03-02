@@ -31,7 +31,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func stopTapped(sender:UIButton) {
-//        RPScreenRecorder.sharedRecorder().stopRecordingWithHandler{(preview)}
+        RPScreenRecorder.sharedRecorder().stopRecordingWithHandler{ (previewCotroller:RPPreviewViewController?, error:NSError?) in
+            self.presentViewController(previewCotroller!, animated: true, completion: nil)
+        }
     }
     
     @IBAction func buttonTapped(sender:UIButton) {
