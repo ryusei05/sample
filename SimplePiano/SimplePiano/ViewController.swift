@@ -16,14 +16,41 @@ class ViewController: UIViewController {
 
     let soundManager = SoundManager()
     
+    let soundArray:[String] = ["do","re","mi","fa","so","ra","si"]
+    let timeArray:[Double] = [1.0,1.0,1.0,1.0,1.0,1.0,1.0]
+    
+    var count = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func startAutoPlay(sender:AnyObject) {
+        count = 0
+        autoPlay()
+    }
+    
+    func autoPlay() {
+        if count >= soundArray.count {
+            return
+        }
+        
+        print("/Users/ryusei/Documents/sandbox/swift_sample/SimplePiano/1_\(count+1)" + "\(soundArray[count])" + ".mp3")
+
+        soundManager.play("/Users/ryusei/Documents/sandbox/swift_sample/SimplePiano/1_\(count+1)" + "\(soundArray[count])" + ".mp3")
+        
+        let sel = Selector("autoPlay")
+        let interval:NSTimeInterval = timeArray[count]
+        NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: sel, userInfo: nil, repeats: false)
+//        NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: #selector(autoPlay), userInfo: nil, repeats: false)
+        
+        count += 1
     }
     
     @IBAction func recordTapped(sender:UIButton) {
@@ -41,11 +68,26 @@ class ViewController: UIViewController {
         
         switch sender.tag {
         case 1:
-            soundManager.play("/Users/ryusei/Documents/sandbox/swift_sample/SimplePiano/chick.mp3")
+            soundManager.play("s_1_1do")
         case 2:
-            soundManager.play("/Users/ryusei/Documents/sandbox/swift_sample/SimplePiano/cow.mp3")
+            soundManager.play("s_1_2re")
         case 3:
-            soundManager.play("/Users/ryusei/Documents/sandbox/swift_sample/SimplePiano/mouse.mp3")
+            soundManager.play("s_1_3mi")
+        case 4:
+            soundManager.play("s_1_4fa")
+        case 5:
+            soundManager.play("s_1_5so")
+        case 6:
+            soundManager.play("s_1_6ra")
+        case 7:
+            soundManager.play("s_1_7si")
+
+        case 11:
+            soundManager.play("s_chick")
+        case 12:
+            soundManager.play("s_cow")
+        case 13:
+            soundManager.play("s_mouse")
         default:
             break
         }

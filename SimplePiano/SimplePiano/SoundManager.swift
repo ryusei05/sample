@@ -26,19 +26,19 @@ class SoundManager: NSObject {
         }
 */
         
-        let soundPath = NSURL(fileURLWithPath: fileName)
+        guard let asset = NSDataAsset(name: fileName) else {
+            print("みつかんねー")
+            return
+        }
         player?.stop()
         player = nil
-        player = try? AVAudioPlayer(contentsOfURL: soundPath)
+        //        player = try? AVAudioPlayer(contentsOfURL: soundPath)
+        player = try? AVAudioPlayer(data: asset.data)
         
         if let player = player {
             player.numberOfLoops = -1
             player.prepareToPlay()
             player.play()
-        } else {
-            print("みつかんねー")
         }
-        
-        
     }
 }

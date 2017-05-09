@@ -20,7 +20,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98O-Zu-tR2">
                                 <rect key="frame" x="51" y="227" width="90" height="113"/>
                                 <animations/>
-                                <state key="normal" title="Button" image="chick.png"/>
+                                <state key="normal" title="Button" image="chick"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="4VS-Lo-lGB"/>
                                 </connections>
@@ -28,7 +28,7 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE7-jl-OcD">
                                 <rect key="frame" x="115" y="421" width="90" height="76"/>
                                 <animations/>
-                                <state key="normal" title="Button" image="mouse.png"/>
+                                <state key="normal" title="Button" image="mouse"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="iG3-oE-YlQ"/>
                                 </connections>
@@ -36,7 +36,7 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksD-D9-mxW">
                                 <rect key="frame" x="194" y="248" width="90" height="71"/>
                                 <animations/>
-                                <state key="normal" title="Button" image="cow.png"/>
+                                <state key="normal" title="Button" image="cow"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="J85-ds-Avn"/>
                                 </connections>
@@ -61,8 +61,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chick.png" width="161" height="212"/>
-        <image name="cow.png" width="258" height="195"/>
-        <image name="mouse.png" width="258" height="196"/>
+        <image name="chick" width="161" height="212"/>
+        <image name="cow" width="258" height="195"/>
+        <image name="mouse" width="258" height="196"/>
     </resources>
 </document>
